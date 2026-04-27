@@ -248,6 +248,19 @@ nav {
     height: 400px;
   }
 
+  .container-posts {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .coluna-posts {
+    flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
+    width: calc(33.333% - 14px);
+  }
+
   .pesquisa h1 {
     font-size: 42px;
   }
@@ -257,16 +270,17 @@ nav {
   .container-posts {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
   .coluna-posts {
-    width: auto;
-    max-width: 385px;
+    flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
+    width: calc(33.333% - 14px);
   }
 
   .post {
-    width: 385px;
+    width: 100%;
   }
 }
